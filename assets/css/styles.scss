@@ -1,0 +1,48 @@
+---
+---
+
+:root {
+  --max-page-width: 1024px;
+  --primary-blue: #016d77;
+  --primary-orange: #c05a4b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: var(--max-page-width);
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+a {
+  color: var(--primary-blue);
+}
+
+.current {
+  color: var(--primary-orange);
+}
+
+.posts-grid {
+  display: flex;
+  padding: 0px;
+}
+
+.posts-grid li {
+  list-style: none;
+  padding: 10px;
+  max-width: calc(var(--max-page-width) / 3);
+}
+
+.posts-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  //   overflow: hidden;
+  //   object-position: top left;
+}
