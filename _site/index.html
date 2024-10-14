@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Blog</title>
+    <script src="/assets/js/sticky-header.js"></script>
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <!-- ↓ fonts ↓ -->
     <!-- ↓ Karla ↓ -->
@@ -21,53 +22,84 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1 id="header-title">data by jess</h1>
       <nav>
   <ul>
       
+        <li>
+          <a href="/" class="nav-link current-nav-link">posts</a>
+        </li>
       
         <li>
-      <a href="/" class="current">Posts</a>
-          
+          <a href="/about.html" class="nav-link" >about</a>
         </li>
-     
-    
       
-        <li>
-      <a href="/about.html">About</a>
-          
-        </li>
-     
-    
   </ul>
-    </nav>
+</nav>
+
     </header>
     <ul class="posts-grid">
   
-  <li>
-    
-    <img src="/assets/images/chess/chess-federations.jpg" alt="Chess stuff" />
-    
-    <!-- post.url is automatically set by jekyll to the output path of the post -->
-    <h2 class="post-title"><a href="/2024/10/14/chess-by-country.html">Chess stuff</a></h2>
-  </li>
+  <a href="/2024/10/14/chess-by-country.html" class="post-card-link">
+    <li class="post-card">
+      
+      <img src="/assets/images/chess/chess-federations.jpg" alt="Chess stuff" />
+      
+      <!-- post.url is automatically set by jekyll to the output path of the post -->
+      <h2 class="post-card-title">Chess stuff</h2>
+    </li>
+  </a>
   
-  <li>
-    
-    <img src="/assets/images/chess/Rplot01.jpeg" alt="Chess by gender" />
-    
-    <!-- post.url is automatically set by jekyll to the output path of the post -->
-    <h2 class="post-title"><a href="/2024/10/12/chess-by-gender.html">Chess by gender</a></h2>
-  </li>
+  <a href="/2024/10/14/chess-by-country-copy.html" class="post-card-link">
+    <li class="post-card">
+      
+      <img src="/assets/images/chess/chess-federations.jpg" alt="Chess stuff" />
+      
+      <!-- post.url is automatically set by jekyll to the output path of the post -->
+      <h2 class="post-card-title">Chess stuff</h2>
+    </li>
+  </a>
   
-  <li>
-    
-    <img src="/assets/images/samples/federica-fragapane.png" alt="Example post" />
-    
-    <!-- post.url is automatically set by jekyll to the output path of the post -->
-    <h2 class="post-title"><a href="/2024/10/09/third-example-post.html">Example post</a></h2>
-  </li>
+  <a href="/2024/10/12/chess-by-gender.html" class="post-card-link">
+    <li class="post-card">
+      
+      <img src="/assets/images/chess/Rplot01.jpeg" alt="Chess by gender" />
+      
+      <!-- post.url is automatically set by jekyll to the output path of the post -->
+      <h2 class="post-card-title">Chess by gender</h2>
+    </li>
+  </a>
+  
+  <a href="/2024/10/12/chess-by-gender-copy.html" class="post-card-link">
+    <li class="post-card">
+      
+      <img src="/assets/images/chess/Rplot01.jpeg" alt="Chess by gender" />
+      
+      <!-- post.url is automatically set by jekyll to the output path of the post -->
+      <h2 class="post-card-title">Chess by gender</h2>
+    </li>
+  </a>
+  
+  <a href="/2024/10/09/third-example-post.html" class="post-card-link">
+    <li class="post-card">
+      
+      <img src="/assets/images/samples/federica-fragapane.png" alt="Example post" />
+      
+      <!-- post.url is automatically set by jekyll to the output path of the post -->
+      <h2 class="post-card-title">Example post</h2>
+    </li>
+  </a>
+  
+  <a href="/2024/10/09/third-example-post-copy.html" class="post-card-link">
+    <li class="post-card">
+      
+      <img src="/assets/images/samples/federica-fragapane.png" alt="Example post" />
+      
+      <!-- post.url is automatically set by jekyll to the output path of the post -->
+      <h2 class="post-card-title">Example post</h2>
+    </li>
+  </a>
   
 </ul>
 

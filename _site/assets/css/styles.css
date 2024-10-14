@@ -1,8 +1,10 @@
 :root {
   --max-page-width: 1024px;
+  /* The following colors have AAA contrast with white background if font size >18px or 14px and bold */
   --primary-blue: #016d77;
-  --visited: #473144;
-  --primary-orange: #fe9288;
+  --visited: #754263;
+  --primary-orange: #d24529;
+  --background-color: #ffffff;
 }
 
 * {
@@ -10,8 +12,10 @@
   font-family: "Karla", sans-serif;
 }
 
+/* Used for blog titles in both links on homepage and title of a post on it's specific page */
 h2 {
-  font-size: large;
+  font-size: 1.125rem;
+  margin: 0;
 }
 
 body {
@@ -20,14 +24,33 @@ body {
 }
 
 header {
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  transition: display 1s ease;
   margin: 50px;
   text-align: center;
+}
+
+#header-title {
+  transition: font-size 0.2s ease;
+}
+
+header.sticky {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+  padding: 0 1rem;
+}
+
+header.sticky h1 {
+  font-size: 1.5rem;
 }
 
 header ul {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
   list-style: none;
   padding-left: 0;
 }
@@ -36,11 +59,20 @@ a {
   color: var(--primary-blue);
 }
 
-/* a:visited {
-  color: var(--primary-blue);
-} */
+a:visited {
+  color: var(--visited);
+}
 
-.current {
+.nav-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+a.nav-link {
+  color: var(--primary-blue);
+}
+
+a.current-nav-link {
   color: var(--primary-orange);
 }
 
@@ -49,8 +81,28 @@ a {
   padding: 0px;
 }
 
-.post-title {
+.post-card:hover {
+  animation: hover-card 0.4s;
+  animation-fill-mode: forwards; /* Animation ends and does not go back to 1 opacity unless hover stops */
+  cursor: pointer;
+}
+
+@keyframes hover-card {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+a.post-card-link {
+  text-decoration: none;
+}
+
+.post-card-title {
   text-align: center;
+  color: var(--primary-blue);
 }
 
 .posts-grid li {
@@ -65,6 +117,12 @@ a {
   object-fit: cover;
   overflow: hidden;
   object-position: top left;
+}
+
+/* Post date shown under title on a blog post page */
+#post-date {
+  font-style: italic;
+  margin: 0;
 }
 
 .post-content {
