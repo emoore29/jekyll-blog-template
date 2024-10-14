@@ -78,6 +78,7 @@ a.current-nav-link {
 
 .posts-grid {
   display: flex;
+  flex-wrap: wrap;
   padding: 0px;
 }
 
@@ -108,7 +109,7 @@ a.post-card-link {
 .posts-grid li {
   list-style: none;
   padding: 10px;
-  max-width: calc(var(--max-page-width) / 3);
+  width: calc(var(--max-page-width) / 3);
 }
 
 .posts-grid img {
