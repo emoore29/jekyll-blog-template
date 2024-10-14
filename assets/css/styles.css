@@ -21,6 +21,9 @@ h2 {
 body {
   max-width: var(--max-page-width);
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -53,6 +56,11 @@ header ul {
   gap: 2rem;
   list-style: none;
   padding-left: 0;
+}
+
+footer {
+  text-align: center;
+  margin: auto auto 0 auto;
 }
 
 a {
