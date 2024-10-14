@@ -8,9 +8,8 @@ title: Blog
     {% if post.image %}
     <img src="{{ post.image }}" alt="{{ post.title }}" />
     {% endif %}
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-    {{ post.excerpt }}
+    <!-- post.url is automatically set by jekyll to the output path of the post -->
+    <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
   </li>
   {% endfor %}
 </ul>

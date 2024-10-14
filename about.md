@@ -5,4 +5,4 @@ title: About
 
 ## About me
 
-This page tells you a little bit about me.
+A bit about me...
