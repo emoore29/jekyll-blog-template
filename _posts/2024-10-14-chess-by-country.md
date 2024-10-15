@@ -1,7 +1,7 @@
 ---
-title: "Chess stuff"
+title: "Chess federations"
 date: 2022-08-12
-image: "/assets/images/samples/sample-image-federica-fragapane-3.png"
+image: "/assets/images/chess/chess-federations.jpg"
 ---
 
 Visualising the characteristics of the largest chess federations.
